@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tercera pagina WEB</title>
+</head>
+<body>
+    <h1>Pagina dedicada a <b>Divs, Header y Navs</b></h1>
+    <div class="contenedor">
+        <header role="banner">
+            <!--Todo lo que se escriba dentro de esto seran los hijos-->
+            <!--Puedes adjuntarles para diferenciarlos  id=""(solo debe usarse una vez por documento y class="" puede reutilizarse) -->
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo del curso">
+                </div>
+                <nav class="navegacion" role="navigation"> 
+                    <!--La navegacion siempre debe de estar ene la etiqueta NAV-->
+                    <a href="Naipes/naipes.html">Ir a naipes</a>  
+                    <!--Sirve para hacer enlaces, lo que va adentro del <a> es lo que vas a enlazar-->
+                     <ul>
+                        <!--Sirve para hacer listas-->
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="http://google.com.mx" target="_blank">Ir a Google</a></li>
+                        <!--Atributo target="blank" abre otra pestaña-->
+                        <li><a href="#Noticias">Ir a Noticias</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main class="contenido principal" role="main">
+            <!--En esta seccion se coloca lo mas importante de la pagina -->
+            <section>
+                <!--El primer elemento del section debe de ser una encabezado(h1)-->
+                <h2>Nuestros cursos</h2>  
+                <!--Un div por cada curso-->
+                <div>
+                    <h3>HTML5 </h3>
+                    <img src="img/html5.png" width="200" height="200" alt="html5 logo"><br>
+                    <a href="img/programa-html5.pdf" download>Descargar Programa</a>
+                    <!--Atributo download sirve para descargar-->
+                </div>
+                <div>
+                    <h3>CSS3 </h3>
+                    <img src="img/css3.png" width="200" height="200" alt="css3 logo">
+                </div>
+                <div>
+                    <h3>JavaScript </h3>
+                      <img src="img/js.jpg" width="200" height="200" alt="javascript logo">
+                 </div>
+            </section>
+            <section id="Noticias">
+                <h2>Ultimas noticias</h2>
+                <article role="article">
+                    <!--Etiqueta para contenido que habla por si solo-->
+                    <h3>Aprende a programar en el siglo 21 es muy importante </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur aliquid ullam nam dolorum corporis minus tempora beatae vero sunt ab quis inventore mollitia facilis ex, dolores, quibusdam ipsum illo.</p>
+                </article>
+                <article role="articles">
+                        <!--Etiqueta para contenido que habla por si solo-->
+                        <h3>Aprende a programar en el siglo 21 es muy importante </h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur aliquid ullam nam dolorum corporis minus tempora beatae vero sunt ab quis inventore mollitia facilis ex, dolores, quibusdam ipsum illo.</p>
+                    </article>
+            </section>
+        </main>
+        <aside role="complementary">
+            <!--Etiqueta para elementos laterales-->
+            <h2>Próximos cursos</h2>
+            <div>
+                <h3>PHP</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis omnis, deleniti tenetur, consequuntur ex culpa, pariatur corrupti exercitationem facere iure nihil rem cum. Mollitia harum architecto laudantium dignissimos incidunt.</p>
+            </div>
+            <div>
+                <h3>MySQL</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis omnis, deleniti tenetur, consequuntur ex culpa, pariatur corrupti exercitationem facere iure nihil rem cum. Mollitia harum architecto laudantium dignissimos incidunt.</p>
+            </div>
+        </aside>
+    </div>
+    <footer role="contentinfo">
+        <!--Siempre será la parte inferior del sitio Web-->
+        <div class="nosotros">
+            <h3>Sobre nuestra escuela</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus saepe cupiditate incidunt minus ut numquam perspiciatis sit, nihil expedita perferendis asperiores, harum nisi ex a nulla quo dicta. Doloremque, molestias!</p>
+
+        </div>
+        <div class="menu">
+            <nav class="navegacion" role="navigation">
+                 Menú aquí
+            </nav>
+        </div>
+        <p>Cursos de diseño Web &mdash; Todos los derechos reservados &copy;</p>
+    </footer>
+</body>
+</html>
