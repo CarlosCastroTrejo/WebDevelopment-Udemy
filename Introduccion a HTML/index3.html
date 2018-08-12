@@ -40,6 +40,41 @@
                     <img src="img/html5.png" width="200" height="200" alt="html5 logo"><br>
                     <a href="img/programa-html5.pdf" download>Descargar Programa</a>
                     <!--Atributo download sirve para descargar-->
+
+                    <p>Ventajas de este curso</p>
+                    <ul>
+                        <!--Unorder lists-->
+                        <li>Lo puedes tomar en linea</li>
+                            <ul>
+                                <li>En Udemy</li>  
+                                <li>A cualquier hora del dia</li>                              
+                            </ul>
+                        <li>Avanzar a tu ritmo</li>
+                        <li>Puede preguntar tus dudas al instructor</li>
+                        <!--List item-->
+                    </ul>
+                    <p>Temarios del curso</p>
+                    <ol>
+                        <!--Order List-->
+                        <li>Basicos de HTML</li>
+                        <li>Etiquetas de HTML5</li>
+                            <ol>
+                                <li>Elementos semanticos</li>
+                                <li>Header</li>                                
+                            </ol>
+                        <li>Crear enlaces</li>
+                        <li>Crear listas</li>
+                    </ol>
+                    <p>Lo que debes de aprender para ser desarrollador WEB:</p>
+                    <dl>
+                        <!--Lista definidas (Definition Lists)-->
+                        <dt>HTML5</dt> <!--Definition Term-->
+                        <dd>Agrega estructura a tu desarrollo</dd> <!--Definition Description-->
+                        <dt>CSS3</dt>
+                        <dd>Agrega presentacion a tus desarrollo</dd>
+                        <dt>JavaScript</dt>
+                        <dd>Agrega inteligencia a tus desarrollo</dd>
+                    </dl>
                 </div>
                 <div>
                     <h3>CSS3 </h3>
@@ -66,7 +101,45 @@
         </main>
         <aside role="complementary">
             <!--Etiqueta para elementos laterales-->
-            <h2>Próximos cursos</h2>
+            <table width="300">
+                <!--Table sirve para insertar tabla-->
+                <caption><h2>Próximos cursos</h2></caption> <!--Caption para agregar description-->
+                <thead> <!--Agrega encabezado a la tabla-->
+                    <tr><!--Table Row-->
+                        <th>Curso</th>
+                        <th>Precio</th> <!--th agrega columnas-->
+                    </tr>
+                </thead>
+                <tfoot> <!--Agrega pie de pagina-->
+                    <tr>
+                        <td colspan="2" align="center">No te los puedes perder</td>
+                    </tr>
+                </tfoot>
+                <tbody> <!--Agregar el cuerpo de la tabla-->
+                    <tr>
+                        <td rowspan="3" align="center">PHP</td> <!--RowSpan para reducir las filas-->
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>$99 (Sabatino)</td>
+                    </tr>
+                    <tr>
+                        <td>$99 (Senior)</td>
+                    </tr>
+                    <tr>
+                        <td>MySQL</td>
+                        <td>$49</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>$19</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>$199</td>
+                    </tr>
+                </tbody>
+            </table>
             <div>
                 <h3>PHP</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis omnis, deleniti tenetur, consequuntur ex culpa, pariatur corrupti exercitationem facere iure nihil rem cum. Mollitia harum architecto laudantium dignissimos incidunt.</p>
