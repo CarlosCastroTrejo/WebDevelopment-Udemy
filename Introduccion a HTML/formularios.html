@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina con formularios y campos</title>
+</head>
+<body>
+    <h2>Creando los formularios</h2>
+
+    <form class="formulario">
+        <fieldset><!--Sirve para agrupar los datos en un cuadrado-->
+            <legend>Tus datos</legend> <!--Escribe una leyenda en el cuadrado-->
+            <!--Etiqueta para crear formulario-->
+            <label>Nombre:</label><!--Para crear las etiquetas-->
+            <input type="text" name="Nombre" placeholder="Tu nombre" autocomplete="off"> 
+            <!--placeholder para decirle al usuario que poner-->
+            <br> 
+            <label>Apellido:</label><!--Para crear las etiquetas-->
+            <input type="text" name="Nombre" placeholder="Tu apellido" autocomplete="off"> 
+            <br>        
+            <label>Sexo:</label><br>
+            <input type="radio" name="sexo" value="Hombre">Hombre<br>
+            <input type="radio" name="sexo" value="Mujer">Mujer<br>
+            <input type="radio" name="sexo" value="Otro">Otro<br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Informacion sobre tu curso</legend>
+            <label >Turno:</label>
+            <select class="turno" name="turno">Turno: <!--Etiqueta para crear selector-->
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="nocturno">Nocturno</option>
+
+
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <!--Crea un boton con el valor de enviar-->
+    </form>
+    
+</body>
+</html>
